@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+   <metadata minClientVersion="2.8.1">
+       <id>Xam.Plugins.Keychain</id>
+       <version>1.0.0</version>
+       <title>Keychain Plugin for Xamarin and Windows</title>
+       <authors>Seth Valdetero</authors>
+       <owners>Seth Valdetero</owners>
+       <licenseUrl>https://github.com/valdetero/Keychain/blob/master/LICENSE.md</licenseUrl>
+       <projectUrl>https://github.com/valdetero/Keychain</projectUrl>
+       <iconUrl></iconUrl>
+       <requireLicenseAcceptance>false</requireLicenseAcceptance>
+       <description>
+         Keychain provides a consistent, cross platform keychain storage plugin for Windows Phone  Silverlight 8/8.1, Windows Phone 8.1, Windows Store, Xamarin.iOS, and Xamarin.Android when using a PCL or any project and is Xamarin.Forms and MvvmCross compatible.  This makes it easier to create cross-platform .NET apps and have cross a platform keychain store. Manage and use keychain store from one PCL and save natively on each platform. 
+       </description>
+       <summary>Cross platform keychain for Windows Phone Silverlight 8/8.1, Windows Phone 8.1, Windows Store, Xamarin.Android and Xamarin.iOS with a PCL or in a base project. </summary>
+       <tags>xamarin, pcl, xam.pcl, plugin for xamarin, plugin, keychain, windows phone, winphone, wp8, winrt, android, xamarin.forms, ios, monoandroid, monodroid, monotouch</tags>
+       <dependencies>
+       </dependencies>
+   </metadata>
+   <files>
+     <!--Core-->
+     <file src="..\Keychain.Plugin\bin\Release\Keychain.Plugin.dll" target="lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10\Keychain.Plugin.dll" />
+     <file src="..\Keychain.Plugin\bin\Release\Keychain.Plugin.xml" target="lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10\Keychain.Plugin.xml" />
+     <file src="..\Keychain.Plugin.Abstractions\bin\Release\Keychain.Plugin.Abstractions.dll" target="lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10\Keychain.Plugin.Abstractions.dll" />
+     <file src="..\Keychain.Plugin.Abstractions\bin\Release\Keychain.Plugin.Abstractions.xml" target="lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10\Keychain.Plugin.Abstractions.xml" />
+     <file src="core\Keychain.cs.pp" target="content\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10\Helpers\Keychain.cs.pp" />
+
+     <!--Win Phone Silverlight-->
+     <file src="..\Keychain.Plugin.WindowsPhone\bin\Release\Keychain.Plugin.dll" target="lib\wp8\Keychain.Plugin.dll" />
+     <file src="..\Keychain.Plugin.WindowsPhone\bin\Release\Keychain.Plugin.xml" target="lib\wp8\Keychain.Plugin.xml" />
+     <file src="..\Keychain.Plugin.Abstractions\bin\Release\Keychain.Plugin.Abstractions.dll" target="lib\wp8\Keychain.Plugin.Abstractions.dll" />
+     <file src="..\Keychain.Plugin.Abstractions\bin\Release\Keychain.Plugin.Abstractions.xml" target="lib\wp8\Keychain.Plugin.Abstractions.xml" />
+
+     <!--Win Phone 81-->
+     <file src="..\Keychain.Plugin.WindowsPhone81\bin\Release\Keychain.Plugin.dll" target="lib\wpa81\Keychain.Plugin.dll" />
+     <file src="..\Keychain.Plugin.WindowsPhone81\bin\Release\Keychain.Plugin.xml" target="lib\wpa81\Keychain.Plugin.xml" />
+     <file src="..\Keychain.Plugin.Abstractions\bin\Release\Keychain.Plugin.Abstractions.dll" target="lib\wpa81\Keychain.Plugin.Abstractions.dll" />
+     <file src="..\Keychain.Plugin.Abstractions\bin\Release\Keychain.Plugin.Abstractions.xml" target="lib\wpa81\Keychain.Plugin.Abstractions.xml" />
+     
+     <!--WinStore-->
+     <file src="..\Keychain.Plugin.WindowsStore\bin\Release\Keychain.Plugin.dll" target="lib\win8\Keychain.Plugin.dll" />
+     <file src="..\Keychain.Plugin.WindowsStore\bin\Release\Keychain.Plugin.xml" target="lib\win8\Keychain.Plugin.xml" />
+     <file src="..\Keychain.Plugin.Abstractions\bin\Release\Keychain.Plugin.Abstractions.dll" target="lib\win8\Keychain.Plugin.Abstractions.dll" />
+     <file src="..\Keychain.Plugin.Abstractions\bin\Release\Keychain.Plugin.Abstractions.xml" target="lib\win8\Keychain.Plugin.Abstractions.xml" />
+
+     <!--Xamarin.Android-->
+     <file src="..\Keychain.Plugin.Android\bin\Release\Keychain.Plugin.dll" target="lib\MonoAndroid10\Keychain.Plugin.dll" />
+     <file src="..\Keychain.Plugin.Android\bin\Release\Keychain.Plugin.xml" target="lib\MonoAndroid10\Keychain.Plugin.xml" />
+     <file src="..\Keychain.Plugin.Abstractions\bin\Release\Keychain.Plugin.Abstractions.dll" target="lib\MonoAndroid10\Keychain.Plugin.Abstractions.dll" />
+     <file src="..\Keychain.Plugin.Abstractions\bin\Release\Keychain.Plugin.Abstractions.xml" target="lib\MonoAndroid10\Keychain.Plugin.Abstractions.xml" />
+
+     <!--Xamarin.iOS-->
+     <file src="..\Keychain.Plugin.iOS\bin\Release\Keychain.Plugin.dll" target="lib\MonoTouch10\Keychain.Plugin.dll" />
+     <file src="..\Keychain.Plugin.iOS\bin\Release\Keychain.Plugin.xml" target="lib\MonoTouch10\Keychain.Plugin.xml" />
+     <file src="..\Keychain.Plugin.Abstractions\bin\Release\Keychain.Plugin.Abstractions.dll" target="lib\MonoTouch10\Keychain.Plugin.Abstractions.dll" />
+     <file src="..\Keychain.Plugin.Abstractions\bin\Release\Keychain.Plugin.Abstractions.xml" target="lib\MonoTouch10\Keychain.Plugin.Abstractions.xml" />
+
+     <!--Xamarin.iOS Unified-->
+     <file src="..\Keychain.Plugin.iOSUnified\bin\Release\Keychain.Plugin.dll" target="lib\Xamarin.iOS10\Keychain.Plugin.dll" />
+     <file src="..\Keychain.Plugin.iOSUnified\bin\Release\Keychain.Plugin.xml" target="lib\Xamarin.iOS10\Keychain.Plugin.xml" />
+     <file src="..\Keychain.Plugin.Abstractions\bin\Release\Keychain.Plugin.Abstractions.dll" target="lib\Xamarin.iOS10\Keychain.Plugin.Abstractions.dll" />
+     <file src="..\Keychain.Plugin.Abstractions\bin\Release\Keychain.Plugin.Abstractions.xml" target="lib\Xamarin.iOS10\Keychain.Plugin.Abstractions.xml" />
+
+   </files>
+</package>
